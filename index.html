@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profil</title>
-    <link rel="stylesheet" href="/sesi3/assets/style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="/sesi3/assets/images/partner.png" alt="logo" class="logo-img">
-            <h1 class="logo-title">ENDY</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#jasa">JASA</a></li>
-                <li><a href="mailto: endybjb22@gmail.com">KONTAK</a></li>
-            </ul>
-        </nav>
-        <button class="btn-cta" onclick="redirInstagram()">FOLLOW SAYA</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="/sesi 4/profil-sederhana/assets/style.css" />
+      <title>profil</title>
+  </head>
+  <body>
+    <header class="animate__animated animate__backInDown animate__faster">
+      <div class="logo">
+        <img
+          src="/sesi 4/profil-sederhana/assets/images/partner.png"
+          alt="logo"
+          class="logo-img animate__animated animate__swing animate__infinite"
+        />
+        <h1 class="logo-title animate__animated animate__swing animate__infinite">ENDY</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#jasa">JASA</a></li>
+          <li><a href="mailto: endybjb22@gmail.com">KONTAK</a></li>
+        </ul>
+      </nav>
+      <button class="btn-cta" onclick="redirInstagram()">FOLLOW SAYA</button>
     </header>
     <div class="container">
-        <div class="intro">
-            <p class="title">hello, endy here!</p>
-            <p class="description">Teknologi Informatika </p>
-            <img src="/sesi3/assets/images/endy.jpg" alt="endy" class="img-foto">
-        </div>
+      <div class="intro">
+        <p class="title animate__animated animate__backInLeft">hello, endy here!</p>
+        <p class="description animate__animated animate__backInRight">Teknologi Informatika</p>
+        <img
+          src="/sesi 4/profil-sederhana/assets/images/endy.jpg"
+          alt="endy"
+          class="img-foto animate__animated animate__backInUp"
+        />
+      </div>
     </div>
     <div class="parallax">
-        <div class="tentang">
-            <p class="title">Saya adalah mahasiswa</p>
-            <p class="description">Semester 3</p> 
-            <div class="mt-10">
-                 <button class="btn-cta" onclick="redirWhatsapp()">Mari kerja sama</button>
-            </div>
+      <div class="tentang">
+        <p class="title">Saya adalah mahasiswa</p>
+        <p class="description">Semester 3</p>
+        <div class="mt-10">
+          <button class="btn-cta" onclick="redirWhatsapp()">
+            Mari kerja sama
+          </button>
         </div>
-        <div class="container">
-             <div class="card" id="jasa">
-                    <div class="card-item">
-                        <img src="/sesi3/assets/images/24-hours.png" alt="icon1" class="icon">
-                        <p class="card-title">pelayanan nonstop</p>
-                        <p class="card-description">Servis 24 jam nonstop</p>
-                    </div>
-                    <div class="card-item">
-                        <img src="/sesi3/assets/images/hot-deal.png" alt="icon2" class="icon">
-                        <p class="card-title">Saya programer amatir</p>
-                        <p class="card-description">Biaya jasa murah banget!!!</p>
-                    </div>
-                    <div class="card-item">
-                        <img src="/sesi3/assets/images/rating.png" alt="icon3" class="icon">
-                        <p class="card-title">664 view</p>
-                        <p class="card-description">Merka senang bekerja sama dengan saya</p>
-                    </div>
-             </div>
+      </div>
+      <div class="container">
+        <div class="card animate__animated animate__backInUp" id="jasa">
+          <div class="card-item ">
+            <img
+              src="/sesi 4/profil-sederhana/assets/images/24-hours.png"
+              alt="icon1"
+              class="icon animate__animated animate__fadeIn animate__delay-1s"
+            />
+            <p class="card-title animate__animated animate__fadeIn animate__delay-1s">pelayanan nonstop</p>
+            <p class="card-description animate__animated animate__fadeIn animate__delay-1s">Servis 24 jam nonstop</p>
+          </div>
+          <div class="card-item">
+            <img
+              src="/sesi 4/profil-sederhana/assets/images/24-hours.png"
+              alt="icon2"
+              class="icon animate__animated animate__fadeIn animate__delay-1s"
+            />
+            <p class="card-title animate__animated animate__fadeIn animate__delay-1s">Saya programer amatir</p>
+            <p class="card-description animate__animated animate__fadeIn animate__delay-1s">Biaya jasa murah banget!!!</p>
+          </div>
+          <div class="card-item">
+            <img
+              src="/sesi 4/profil-sederhana/assets/images/rating.png"
+              alt="icon3"
+              class="icon animate__animated animate__fadeIn animate__delay-1s"
+            />
+            <p class="card-title animate__animated animate__fadeIn animate__delay-1s">664 view</p>
+            <p class="card-description animate__animated animate__fadeIn animate__delay-1s">
+              Merka senang bekerja sama dengan saya
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <p class="title">&copy; endy website 2023</p>
+      <p class="title">&copy; endy website 2023</p>
     </footer>
     <script>
-        function redirInstagram() {
-            window.location.href = "http://instagram.com/@_ms_effendy"
-        }
+      function redirInstagram() {
+        window.location.href = "http://instagram.com/@_ms_effendy";
+      }
 
-        function redirWhatsapp(){
-            window.location.href = "https://wa.me/+6287737806282"
-        }
+      function redirWhatsapp() {
+        window.location.href = "https://wa.me/+6287737806282";
+      }
     </script>
-</body>
+  </body>
 </html>
